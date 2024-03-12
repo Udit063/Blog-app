@@ -1,4 +1,6 @@
 // accessing the env variables sometimes shows an error or does not give app value
+
+// for appwrite url only
 const conf = {
   appwriteUrl: String(process.env.REACT_APP_APPWRITE_URL),
   appwriteProjectId: String(process.env.REACT_APP_APPWRITE_PROJECT_ID),
