@@ -15,6 +15,7 @@ export class Service {
     this.bucket = new Storage(this.client);
   }
 
+  //slug is just a title replacing spaces with -
   async getPost(slug) {
     try {
       return await this.databases.getDocument(
@@ -94,7 +95,7 @@ export class Service {
     }
   }
 
-  // storage service
+  // storage service - bucket
   async uploadFile(file) {
     try {
       return await this.bucket.createFile(
